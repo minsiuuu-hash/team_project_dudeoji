@@ -80,4 +80,4 @@ python test4.py --cam 1 --debug  # 디버그 모드
 - **FPGA**: Xilinx Vivado 2020.2
 - **보드**: Digilent Basys3 (xc7a35tcpg236-1)
 - **시뮬레이션**: Synopsys VCS (UVM 1.2)
-- **Python**: 3.x + OpenCV, Pillow, NumPy
+- **Python**: 3.14 + OpenCV, Pillow, NumPy
