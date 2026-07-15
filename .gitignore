@@ -1,0 +1,74 @@
+# ============================================================
+# Vivado / Xilinx build artifacts
+# ============================================================
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.hbs/
+*.str
+*.jou
+*.log
+*.wdb
+*.pb
+*.xpr
+vivado*.backup*
+webtalk*/
+.Xil/
+xsim.dir/
+xvlog.pb
+
+# Bitstream (optional - uncomment if you want to track .bit files)
+# *.bit
+
+# ============================================================
+# VCS / UVM / Synopsys simulation artifacts
+# ============================================================
+simv
+simv.daidir/
+simv.vdb/
+csrc/
+coverage.vdb/
+*.fsdb
+novas.*
+*.conf
+*Log
+*.key
+ucli.key
+vc_hdrs.h
+cm.log
+tr_db.log
+test.txt
+.fsm.sch.verilog.xml
+DVEfiles/
+verdiLog/
+novas.rc
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ============================================================
+# OS / IDE
+# ============================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
