@@ -60,6 +60,8 @@ module game_fsm (
                         end
                     end
                     default: begin
+                        game_state <= IDLE;
+                        game_reset_pulse <= 1'b1;
                     end
                 endcase
             end
