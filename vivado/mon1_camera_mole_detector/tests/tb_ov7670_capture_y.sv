@@ -51,7 +51,6 @@ module tb_ov7670_capture_y;
         repeat (2) @(negedge pclk);
         reset = 1'b0;
 
-        // A complete line must keep its Y coordinate through the last pixel.
         for (int row = 0; row < 3; row++) begin
             for (int col = 0; col < H_RES; col++)
                 send_pixel(row);
@@ -60,7 +59,6 @@ module tb_ov7670_capture_y;
             end_line(row + 1);
         end
 
-        // Frame sync resets the coordinate before the next frame.
         @(negedge pclk);
         vsync = 1'b1;
         @(posedge pclk);
@@ -70,7 +68,6 @@ module tb_ov7670_capture_y;
         @(negedge pclk);
         vsync = 1'b0;
 
-        // An early HREF falling edge also advances exactly one row.
         send_pixel(0);
         end_line(1);
         send_pixel(1);

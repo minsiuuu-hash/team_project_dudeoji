@@ -77,7 +77,6 @@ module ov7670_capture #(
                 byte_phase <= 1'b0;
                 if (href_d) begin
                     x_cnt <= '0;
-                    // Advance the row only when HREF falls, including full-width lines.
                     if (y_cnt != V_RES - 1) begin
                         y_cnt <= y_cnt + 1'b1;
                     end
